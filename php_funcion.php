@@ -25,8 +25,18 @@
         
         // Realizamos la suma de M por N veces
         for ($i = 0; $i < $N; $i++) {
-            $result *= $M;
+            
+            // Sumamos M
+            $sumas = 0;
+            for ($j = 0; $j < $result; $j++) {
+                $sumas += $M;
+                //echo $sumas, " - ";
+            }
+            //echo $sumas, " / ";
+
+            $result = $sumas;
         }
+
         return $result;
     }
 
